@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarritodeCompras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Productos Kannakids</h1>
+  <div class="productos">
+    <div class="producto">
+      <h3>Camiseta Infantil</h3>
+      <p>$40.000</p>
+      <button onclick="agregarAlCarrito('Camiseta Infantil', 40000)">Agregar</button>
+    </div>
+    <div class="producto">
+      <h3>Sudadera Niños</h3>
+      <p>$65.000</p>
+      <button onclick="agregarAlCarrito('Sudadera Niños', 65000)">Agregar</button>
+    </div>
+    <div class="producto">
+        <h3>Sudadera Niña</h3>
+        <p>$65.000</p>
+        <button onclick="agregarAlCarrito('Sudadera Niñas', 65000)">Agregar</button>
+      </div>
+      <div class="producto">
+        <h3>Camisas Niños</h3>
+        <p>$55.000</p>
+        <button onclick="agregarAlCarrito('Camisas Niños', 55000)">Agregar</button>
+      </div>
+      <div class="producto">
+        <h3>Camisas Niñas</h3>
+        <p>$55.000</p>
+        <button onclick="agregarAlCarrito('Camisas Niñas', 55000)">Agregar</button>
+      </div>
+  </div>
+
+  <h2>Carrito</h2>
+  <ul id="carrito"></ul>
+  <p>Total: $<span id="total">0</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="icono.css">
+    <title>Productos</title>
+    <link rel="icon" href="osofv.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <h1>Tienda virtual Kannakids</h1>
+        <div class="icon-bar">
+            <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+            <a href="Compra.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de los elemntos -->
+         <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Conjunto Niña</span>
+                <img src="rnina1.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 50.000</span>
+                <!-- <button class="boton-item">Agregar Carrito</button> -->
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Niña', 50000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Camiseta Niña</span>
+                <img src="rnina2.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 45.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Camiseta Niña', 45000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Short Niña</span>
+                <img src="rnina3.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 70.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Short Niña', 70000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Vestido Seda</span>
+                <img src="ropa4.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 100.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Vestido Seda', 100000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Bebé Niña</span>
+                <img src="ropa5.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 50.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Bebé Niña', 50000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Bebé Niño</span>
+                <img src="ropa1.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 56.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Bebé Niño', 56000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Azul Niño</span>
+                <img src="rnino1.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 60.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Azul Niño', 60000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Camiseta Niño</span>
+                <img src="rnino2.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 30.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Camiseta Niño', 30000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Short Niño</span>
+                <img src="rnino3.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 115.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Short Niño', 115000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Elegante Niño</span>
+                <img src="rnino4.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 135.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Elegante Niño', 135000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Elegante Niño</span>
+                <img src="rnino4.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 135.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Elegante Niño', 135000)">Agregar Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Conjunto Elegante Niño</span>
+                <img src="rnino4.jpg" alt="" class="img-item">
+                <span class="Precio-item">$ 135.000</span>
+                <button class="boton-item" onclick="agregarAlCarrito('Conjunto Elegante Niño', 135000)">Agregar Carrito</button>
+            </div>
+         </div>
+
+         <!-- Carrito de compras -->
+         
+            <div class="info-lateral">                
+                <h2>Tu carrito</h2>
+                <img src="carro.png" alt="" width="70px">
+                <ul id="carrito"></ul>
+                <p>Total Carrito: $<span id="total">0</span></p> 
+                <button class="botonn" onclick= "mostrarConfirmacion()">Confirmar Pedido</button>
+            </div>            
+        </div>
+    </section>
+
+<!-- Código de HTML enlace a carrito de compras -->
+<!-- <h2>Tu Carrito</h2> -->
+<!-- <ul id="carrito"></ul> -->
+<!-- <p>Total Carrito: $<span id="total">0</span></p>   -->
+<!-- Llamadas a JavaScript -->
+
+<!-- Inicia el Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Kannakids. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="footer-redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/tuusuario" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+  </footer>
+
+  </footer>
+ <!-- Fin del Footer -->
+
+<script src="mensaje.js"></script>
+ <script src="script.js"></script>
+<script src="boton.js"></script>
+<!-- <script src="mensaje.js"></script> -->
+</body>
+</html>

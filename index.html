@@ -4,47 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kannakids</title>
+    <link rel="icon" href="osofv.png" type="image/png">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="imagen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="icono.css">
+    <link rel="stylesheet" href="boton.css">
+    <link rel="stylesheet" href="galeria.css">
 </head>
-<body>
+<body background="ninos3.png">
     
     <header>
-        <h1>Kannakids</h1>
-        <img src="ninos3.png">
+<!-- iconos de página con css icono.css --> 
+        <div class="icon-bar">
+            <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+            <a href="#about"><i class="fa-solid fa-user"></i></a>
+            <a href="#Portafolio"><i class="fa-solid fa-briefcase"></i></a>
+            <a href="#ubicacion"><i class="fa-solid fa-map-location"></i></a>
+            <a href="#contact"><i class="fa fa-envelope"></i></a>
+            <a href="Compra.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+<!-- Fin -->
+        <!-- <h1>Kannakids</h1> -->
+        <img src="titulo1.png">
+        <!-- <img src="ninos3.png"> -->
+
+        <!-- Botón de Navegación boton.css-->
+        <!-- <div class="topnav"> -->
+            <!-- <a href="#home" class="active">Home</a> -->
+            <!-- <a href="#news">News</a> -->
+        <!-- <   a href="#contact">Contact</a> -->
+        <!-- </div> -->
+         <!-- Fin -->
         
-        <nav>
+         <nav class="navbar">
+            <ul>
+              <li><a href="#about">Quienes Somos</a></li>
+              <li><a href="#Portafolio">Portafolio</a></li>
+              <li><a href="#ubicacion">Dónde Estamos</a></li>
+              <li><a href="Compra.html">Tienda Virtual</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
+          
+
+        <!-- <nav>
             <ul>
                 <li> <a href="#about">Sobre mí</a></li>
                 <li> <a href="#portafolio">Portafolio</a></li>
+                <li> <a href="Compra.html">Tienda Virtual</a></li>
                 <li> <a href="#contact">Contacto</a></li>     
             </ul>
-        </nav>
+        </nav> -->
     </header>
+    <!-- Inicio de galeria de imágenes -->
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="banner1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="banner3.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="banner6.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    <!-- Fin de galeria de imágenes -->
+
     <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Hola soy diseñadora de ropa para niños </p>
+        <h2>Quienes Somos</h2>
+        <img src="tienda.png" alt="proyecto 1" class="imagen-proyecto">
+        <p> En nuestra boutique infantil encontrarás un espacio lleno de encanto 
+            y ternura, diseñado especialmente para los más pequeños del hogar. 
+            Ofrecemos una cuidada selección de ropa, calzado y accesorios para bebés 
+            y niños, combinando calidad, comodidad y las últimas tendencias en moda infantil. 
+            Cada prenda ha sido elegida pensando en el estilo único de cada niño y en las 
+            necesidades de los padres que buscan productos duraderos y con un toque especial.
+            Además, contamos con artículos personalizados, detalles para regalos y atención 
+            cálida y cercana, porque creemos que cada niño merece lucir único desde sus primeros 
+            pasos. 
+        </p>
     </section>
     <section id="Portafolio">
         <h2>Portafolio</h2>
         <div class="gallery">
             <div class="project">
-                <img src="ninos1.jpg" alt="proyecto 1">
-                <p>descripción de imagen 1</p>
+                <img src="ropa4.jpg" alt="proyecto 1">
+                <p>
+                    Nuestra colección de ropa para niña está llena de magia, 
+                    color y detalles que enamoran. Diseñada para niñas con 
+                    gran imaginación y estilo propio, cada prenda combina 
+                    comodidad, calidad y un diseño encantador. Desde 
+                    vestidos con vuelos hasta conjuntos modernos 
+                    y divertidos, usamos telas suaves y resistentes que se 
+                    adaptan a cada etapa de su crecimiento. 
+                    Con estampados dulces, colores alegres y acabados delicados, 
+                    nuestra ropa acompaña a las niñas en cada juego, risa y momento 
+                    especial.
+                </p>
             </div>
             <div class="project">
                 <img src="ninos2.jpg" alt="proyecto 2">
-                <p>descripción de imagen 2</p>
+                <p>
+                    Nuestra ropa para niño está pensada para acompañar cada aventura con estilo, 
+                    comodidad y durabilidad. Desde conjuntos casuales hasta prendas para ocasiones 
+                    especiales, cada diseño combina funcionalidad con un toque moderno y divertido. 
+                    Usamos materiales resistentes y suaves, perfectos para el ritmo activo de los más 
+                    pequeños. Con estampados originales, colores vibrantes y cortes cómodos, esta 
+                    colección celebra la energía y personalidad única de cada niño.
+                </p>
             </div>
             <div class="project">
                 <img src="ropa1.jpg" alt="proyecto 3">
-                <p>descripción de imagen 3</p>
+                <p>
+                    Nuestra colección de ropa para bebé está diseñada para brindar el máximo confort, 
+                    suavidad y estilo desde los primeros días de vida. Utilizamos telas delicadas, 
+                    hipoalergénicas y transpirables, ideales para la piel sensible del recién nacido. 
+                    Cada prenda combina funcionalidad con ternura: desde bodies y pijamas hasta conjuntos 
+                    adorables para cada ocasión. Con detalles encantadores, colores suaves y cortes cómodos, 
+                    nuestra ropa no solo viste, sino que cuida. Porque cada momento con tu bebé merece lo mejor.
+                </p>
             </div>
         </div>
     </section>
 
-    <div class="contenedor-galeria">
-        <div class="galeria">
+    <section id="ubicacion">
+        <h2>Visítanos y vive la experiencia</h2>
+        <!-- <div class="galeria1"> -->
+            <div class="slider">
+                <div class="slides1">
+                    <img src="ropa5.jpg" alt="1">
+                    <img src="ropa4.jpg" alt="2">
+                    <img src="ropa3.jpg" alt="3">
+                    <img src="Ropa2.jpg" alt="4">
+                </div>
+            </div>
+          
+        <!-- <div class="galeria">
             <div class="contenedor-imagen">
                 <figure>
                     <img src="Ropa2.jpg">
@@ -65,9 +186,29 @@
                     <img src="ropa5.jpg">
                 </figure>
             </div>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
 
+    <div class="contenedor-dos-columnas">
+        <div class="columna">
+        <!-- Enlace de video -->
+          <h2>Pasarela Primavera 2025</h2>
+          <iframe src="https://www.youtube.com/embed/_J0uW64LF_E?si=Qymbv-IEGjRbzMoI&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="columna">
+          <!-- Mapa -->
+          <h2>Encuéntranos aquí</h2>
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.102602370127!2d-73.11303721627405!3d7.114107424101573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fefe2a7a745%3A0x14f74dfced85c7c3!2sEDIFICIO%20TRIANON%20%EF%B8%8F!5e0!3m2!1ses!2sco!4v1746149351174!5m2!1ses!2sco" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+      
 <section id="contact">
     <h2>Contacto</h2>
     <form action="/submit" method="post">
@@ -81,5 +222,25 @@
     </form>
 </section>
 
+
+<!-- Inicia el Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Kannakids. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+    <div class="footer-redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/tuusuario" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+  </footer>
+ <!-- Fin del Footer -->
+
+<script src="galeria.js"></script>
+<script src="icono.js"></script>
 </body>
 </html>

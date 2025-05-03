@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Kannakids</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+    .productos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .producto {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+      width: 220px;
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #carrito {
+      background: #fff;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Productos Kannakids</h1>
+  <div class="productos">
+    <div class="producto">
+      <img src="ropa1.jpg" alt="Camiseta Infantil">
+      <h3>Camiseta Infantil</h3>
+      <p>Camiseta 100% algodón con estampado divertido para niños.</p>
+      <p><strong>$40.000</strong></p>
+      <button onclick="agregarAlCarrito('Camiseta Infantil', 40000)">Agregar</button>
+    </div>
+    <div class="producto">
+      <img src="ropa3.jpg" alt="Sudadera Niños">
+      <h3>Sudadera Niños</h3>
+      <p>Sudadera deportiva para niños, cómoda y resistente.</p>
+      <p><strong>$65.000</strong></p>
+      <button onclick="agregarAlCarrito('Sudadera Niños', 65000)">Agregar</button>
+    </div>
+    <div class="producto">
+      <img src="ropa4.jpg" alt="Gorra Infantil">
+      <h3>Gorra Infantil</h3>
+      <p>Gorra ajustable con diseño colorido para niños.</p>
+      <p><strong>$25.000</strong></p>
+      <button onclick="agregarAlCarrito('Gorra Infantil', 25000)">Agregar</button>
+    </div>
+  </div>
+
+  <h2>Carrito</h2>
+  <div id="carrito">
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+  </div>
+
+  <script>
+    let carrito = [];
+    let total = 0;
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      total += precio;
+      actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+      const lista = document.getElementById('lista-carrito');
+      const totalElem = document.getElementById('total');
+
+      lista.innerHTML = '';
+      carrito.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nombre} - $${item.precio}`;
+        lista.appendChild(li);
+      });
+
+      totalElem.textContent = total;
+    }
+  </script>
+</body>
+</html>

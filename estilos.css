@@ -6,13 +6,13 @@ body{
 }
 
 header{
-    background: burlywood;
+    background: rgb(243, 161, 209);
     color: black;
     padding: 20px 0;
     text-align: center;
 }
 
-nav ul{
+/*nav ul{
     list-style: none;
     padding: 0;
 }
@@ -23,12 +23,50 @@ nav ul li{
 }
 
 nav ul li a{
-    color: aliceblue;
+    color: rgb(0, 5, 8);
     text-decoration: none;
-}
+    font-size: 20px;
+}*/
+
+/* Barra de navegación general */
+.navbar {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Lista de elementos del menú */
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Cada botón del menú */
+  .navbar li a {
+    display: block;
+    padding: 16px 30px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  /* Hover: efecto al pasar el mouse */
+  .navbar li a:hover {
+    background-color: #04AA6D;
+    color: white;
+    border-bottom: 3px solid #ffffff;
+  }
+  
+  
+
 #about{
     padding: 20px;
-    background: blue;
+    background: #e6faeb;
 }
 #about h2{
     margin-top: 0;
@@ -85,3 +123,49 @@ form input[type="submit"]{
         align-items: center;
     }
 }
+
+.imagen-proyecto {
+    width: 350px; /* Puedes ajustar el tamaño */
+    /*height: auto; /* Mantiene la proporción original */
+    display: block;
+    margin: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .imagen-proyecto:hover {
+    transform: scale(1.05); /* Agranda un poco al pasar el mouse */
+  }
+  
+
+/* CSS Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer a {
+    color: #f0c040;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-redes a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-redes a:hover {
+    color: #04AA6D; /* Cambia el color al pasar el mouse */
+  }
