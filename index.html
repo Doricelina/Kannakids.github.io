@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="galeria.css">
 </head>
 <body background="ninos3.png">
-    
+<div class="container">
     <header>
-<!-- iconos de página con css icono.css --> 
+<!-- iconos de página con css icono.css  de la parte izquierda de la página--> 
         <div class="icon-bar">
             <a class="active" href="index.html"><i class="fa fa-home"></i></a>
             <a href="#about"><i class="fa-solid fa-user"></i></a>
@@ -28,16 +28,9 @@
 <!-- Fin -->
         <!-- <h1>Kannakids</h1> -->
         <img src="titulo1.png">
-        <!-- <img src="ninos3.png"> -->
-
-        <!-- Botón de Navegación boton.css-->
-        <!-- <div class="topnav"> -->
-            <!-- <a href="#home" class="active">Home</a> -->
-            <!-- <a href="#news">News</a> -->
-        <!-- <   a href="#contact">Contact</a> -->
-        <!-- </div> -->
-         <!-- Fin -->
-        
+      
+         
+        <!-- Navegación de la página (cinta negra con los títulos)  -->
          <nav class="navbar">
             <ul>
               <li><a href="#about">Quienes Somos</a></li>
@@ -46,18 +39,11 @@
               <li><a href="Compra.html">Tienda Virtual</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
-          </nav>
-          
+          </nav>          
 
-        <!-- <nav>
-            <ul>
-                <li> <a href="#about">Sobre mí</a></li>
-                <li> <a href="#portafolio">Portafolio</a></li>
-                <li> <a href="Compra.html">Tienda Virtual</a></li>
-                <li> <a href="#contact">Contacto</a></li>     
-            </ul>
-        </nav> -->
+        <!-- Fin del bloque de navegación -->
     </header>
+
     <!-- Inicio de galeria de imágenes -->
         <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -98,60 +84,63 @@
 
     <section id="about">
         <h2>Quienes Somos</h2>
-        <img src="tienda.png" alt="proyecto 1" class="imagen-proyecto">
-        <p> En nuestra boutique infantil encontrarás un espacio lleno de encanto 
-            y ternura, diseñado especialmente para los más pequeños del hogar. 
-            Ofrecemos una cuidada selección de ropa, calzado y accesorios para bebés 
-            y niños, combinando calidad, comodidad y las últimas tendencias en moda infantil. 
-            Cada prenda ha sido elegida pensando en el estilo único de cada niño y en las 
-            necesidades de los padres que buscan productos duraderos y con un toque especial.
-            Además, contamos con artículos personalizados, detalles para regalos y atención 
-            cálida y cercana, porque creemos que cada niño merece lucir único desde sus primeros 
-            pasos. 
-        </p>
-    </section>
-    <section id="Portafolio">
-        <h2>Portafolio</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="ropa4.jpg" alt="proyecto 1">
-                <p>
-                    Nuestra colección de ropa para niña está llena de magia, 
-                    color y detalles que enamoran. Diseñada para niñas con 
-                    gran imaginación y estilo propio, cada prenda combina 
-                    comodidad, calidad y un diseño encantador. Desde 
-                    vestidos con vuelos hasta conjuntos modernos 
-                    y divertidos, usamos telas suaves y resistentes que se 
-                    adaptan a cada etapa de su crecimiento. 
-                    Con estampados dulces, colores alegres y acabados delicados, 
-                    nuestra ropa acompaña a las niñas en cada juego, risa y momento 
-                    especial.
-                </p>
-            </div>
-            <div class="project">
-                <img src="ninos2.jpg" alt="proyecto 2">
-                <p>
-                    Nuestra ropa para niño está pensada para acompañar cada aventura con estilo, 
-                    comodidad y durabilidad. Desde conjuntos casuales hasta prendas para ocasiones 
-                    especiales, cada diseño combina funcionalidad con un toque moderno y divertido. 
-                    Usamos materiales resistentes y suaves, perfectos para el ritmo activo de los más 
-                    pequeños. Con estampados originales, colores vibrantes y cortes cómodos, esta 
-                    colección celebra la energía y personalidad única de cada niño.
-                </p>
-            </div>
-            <div class="project">
-                <img src="ropa1.jpg" alt="proyecto 3">
-                <p>
-                    Nuestra colección de ropa para bebé está diseñada para brindar el máximo confort, 
-                    suavidad y estilo desde los primeros días de vida. Utilizamos telas delicadas, 
-                    hipoalergénicas y transpirables, ideales para la piel sensible del recién nacido. 
-                    Cada prenda combina funcionalidad con ternura: desde bodies y pijamas hasta conjuntos 
-                    adorables para cada ocasión. Con detalles encantadores, colores suaves y cortes cómodos, 
-                    nuestra ropa no solo viste, sino que cuida. Porque cada momento con tu bebé merece lo mejor.
-                </p>
-            </div>
+        <div class="about-contenido">
+            <img src="tienda.png" alt="proyecto 1" class="imagen-proyecto">
+            <p> En nuestra boutique infantil encontrarás un espacio lleno de encanto 
+                y ternura, diseñado especialmente para los más pequeños del hogar. 
+                Ofrecemos una cuidada selección de ropa, calzado y accesorios para bebés 
+                y niños, combinando calidad, comodidad y las últimas tendencias en moda infantil. 
+                Cada prenda ha sido elegida pensando en el estilo único de cada niño y en las 
+                necesidades de los padres que buscan productos duraderos y con un toque especial.
+                Además, contamos con artículos personalizados, detalles para regalos y atención 
+                cálida y cercana, porque creemos que cada niño merece lucir único desde sus primeros 
+                pasos. 
+            </p>
         </div>
     </section>
+   
+            <section id="Portafolio">
+                <h2>Portafolio</h2>
+                <div class="gallery">
+                    <div class="project">
+                        <img src="ropa4.jpg" alt="proyecto 1">
+                        <p>
+                            Nuestra colección de ropa para niña está llena de magia, 
+                            color y detalles que enamoran. Diseñada para niñas con 
+                            gran imaginación y estilo propio, cada prenda combina 
+                            comodidad, calidad y un diseño encantador. Desde 
+                            vestidos con vuelos hasta conjuntos modernos 
+                            y divertidos, usamos telas suaves y resistentes que se 
+                            adaptan a cada etapa de su crecimiento. 
+                            Con estampados dulces, colores alegres y acabados delicados, 
+                            nuestra ropa acompaña a las niñas en cada juego, risa y momento 
+                            especial.
+                        </p>
+                    </div><!--  cierra proyecto 1 -->
+                    <div class="project">
+                        <img src="ninos2.jpg" alt="proyecto 2">
+                        <p>
+                            Nuestra ropa para niño está pensada para acompañar cada aventura con estilo, 
+                            comodidad y durabilidad. Desde conjuntos casuales hasta prendas para ocasiones 
+                            especiales, cada diseño combina funcionalidad con un toque moderno y divertido. 
+                            Usamos materiales resistentes y suaves, perfectos para el ritmo activo de los más 
+                            pequeños. Con estampados originales, colores vibrantes y cortes cómodos, esta 
+                            colección celebra la energía y personalidad única de cada niño.
+                        </p>
+                    </div><!--  cierra proyecto 2 -->
+                    <div class="project">
+                        <img src="ropa1.jpg" alt="proyecto 3">
+                        <p>
+                            Nuestra colección de ropa para bebé está diseñada para brindar el máximo confort, 
+                            suavidad y estilo desde los primeros días de vida. Utilizamos telas delicadas, 
+                            hipoalergénicas y transpirables, ideales para la piel sensible del recién nacido. 
+                            Cada prenda combina funcionalidad con ternura: desde bodies y pijamas hasta conjuntos 
+                            adorables para cada ocasión. Con detalles encantadores, colores suaves y cortes cómodos, 
+                            nuestra ropa no solo viste, sino que cuida. Porque cada momento con tu bebé merece lo mejor.
+                        </p>
+                    </div><!--  cierra proyecto 3 -->
+                </div> <!-- Fin de div gallery -->
+            </section>
 
     <section id="ubicacion">
         <h2>Visítanos y vive la experiencia</h2>
@@ -165,30 +154,7 @@
                 </div>
             </div>
           
-        <!-- <div class="galeria">
-            <div class="contenedor-imagen">
-                <figure>
-                    <img src="Ropa2.jpg">
-                </figure>
-            </div>
-            <div class="contenedor-imagen">
-                <figure>
-                    <img src="ropa3.jpg">
-                </figure>
-            </div>
-            <div class="contenedor-imagen">
-                <figure>
-                    <img src="ropa4.jpg">
-                </figure>
-            </div>
-            <div class="contenedor-imagen">
-                <figure>
-                    <img src="ropa5.jpg">
-                </figure>
-            </div>
-        </div> -->
-    <!-- </div> -->
-
+      
     <div class="contenedor-dos-columnas">
         <div class="columna">
         <!-- Enlace de video -->
@@ -222,7 +188,7 @@
     </form>
 </section>
 
-
+</div>
 <!-- Inicia el Footer -->
 <footer class="footer">
     <p>&copy; 2025 Kannakids. Todos los derechos reservados.</p>
